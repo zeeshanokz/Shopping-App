@@ -1,0 +1,75 @@
+{
+  "name": "ShopHub - Shopping App",
+  "version": "1.0.0",
+  "description": "A responsive e-commerce shopping application built with HTML, CSS, and Tailwind CSS",
+  "main": "index.html",
+  "keywords": [
+    "shopping",
+    "ecommerce",
+    "tailwindcss",
+    "responsive",
+    "html5",
+    "css3"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "start": "node api.js && python -m http.server 8000",
+    "dev": "node api.js && tailwindcss -i ./styles.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.14"
+  },
+  "dependencies": {
+    "font-awesome": "^6.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/shophub.git"
+  },
+  "features": [
+    "Responsive Design",
+    "Product Filtering",
+    "Shopping Cart",
+    "Wishlist",
+    "Search Functionality",
+    "Mobile Menu",
+    "Newsletter Subscription",
+    "Product Sorting",
+    "Rating System",
+    "Animated Components"
+  ],
+  "tailwindConfig": {
+    "content": [
+      "./index.html",
+      "./src/**/*.{html,js}"
+    ],
+    "theme": {
+      "extend": {
+        "colors": {
+          "primary": "#667eea",
+          "secondary": "#764ba2",
+          "accent": "#ef4444"
+        },
+        "boxShadow": {
+          "card": "0 4px 15px rgba(0, 0, 0, 0.08)",
+          "hover": "0 15px 40px rgba(102, 126, 234, 0.2)"
+        }
+      }
+    },
+    "plugins": []
+  },
+  "responsive_breakpoints": {
+    "mobile": "max-width: 640px",
+    "tablet": "640px - 1024px",
+    "desktop": "1024px+"
+  },
+  "browser_support": [
+    "Chrome (latest)",
+    "Firefox (latest)",
+    "Safari (latest)",
+    "Edge (latest)",
+    "Mobile browsers"
+  ]
+}
